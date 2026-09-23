@@ -79,13 +79,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "color-scheme", content: "dark" },
       { name: "theme-color", content: "#633CEA" },
-      { title: "Purple — Build software with AI" },
+      { title: "SUPERINTELLIGENS — Build software with AI" },
       {
         name: "description",
         content:
-          "Purple is the AI software generator. Describe your idea in plain language and watch it become a real, deployable app.",
+          "SUPERINTELLIGENS is the AI software generator. Describe your idea in plain language and watch it become a real, deployable app.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "SUPERINTELLIGENS — Build software with AI" },
+      {
+        property: "og:description",
+        content:
+          "SUPERINTELLIGENS turns plain-language ideas into real, deployable software.",
+      },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -100,7 +106,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
-      { rel: "apple-touch-icon", href: "/purple-icon-192.png" },
+      { rel: "apple-touch-icon", href: "/superintelligens-icon-192.png" },
       { rel: "manifest", href: "/manifest.webmanifest" },
     ],
   }),

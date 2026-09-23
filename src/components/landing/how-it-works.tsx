@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 const STEPS = [
   {
     step: 'Describe',
-    title: 'Tell Purple your idea',
-    body: 'Write a prompt in plain language. Attach a screenshot or sketch if you have one — Purple understands both.',
+    title: 'Tell SUPERINTELLIGENS your idea',
+    body: 'Write a prompt in plain language. Attach a screenshot or sketch if you have one — SUPERINTELLIGENS understands both.',
   },
   {
     step: 'Generate',

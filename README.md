@@ -1,14 +1,14 @@
-# Purple
+# Sparkle Kit Hub
 
-Import and set up this project from the attached archive, preserving its exact layout, features, and styling, and ensure it is ready to run and deploy.
+@connector:github:"GitHub API"  https://github.com/kakahanif10-dot/spectral-sparkle-kit.git
+
+change logo on https://spectral-sparkle-kit.lovable.app/ was and rebrand all to that. chnge all name . favicon was bg white and circle
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://purple.lovable.app
-
 ## Build with Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/8befe78b-d9e3-4c61-99cf-bf046e117ef2).
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/cde66335-7e7d-4d74-a100-37919d0c1b77).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
 - **Stay in sync**: every change made in Lovable is committed straight to this repository.

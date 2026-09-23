@@ -1,8 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-const title = 'Sign in — Purple'
+const title = 'Sign in — SUPERINTELLIGENS'
 const description =
-  'Sign in to Purple and turn a plain-language idea into a deployable app in minutes.'
+  'Sign in to SUPERINTELLIGENS and turn a plain-language idea into a deployable app in minutes.'
 
 export const Route = createFileRoute('/login')({
   head: () => ({
@@ -21,7 +21,7 @@ export const Route = createFileRoute('/login')({
 
 import Link from '@/components/link'
 import { ArrowLeft } from 'lucide-react'
-import { PurpleLogo } from '@/components/purple-logo'
+import { SuperintelligensLogo } from '@/components/superintelligens-logo'
 import { AuthForm } from '@/components/auth/auth-form'
 
 function LoginPage() {
@@ -30,7 +30,7 @@ function LoginPage() {
       {/* Left brand panel */}
       <div className="relative hidden w-1/2 flex-col justify-between overflow-hidden border-r border-border p-10 lg:flex">
         <Link href="/" className="relative">
-          <PurpleLogo />
+          <SuperintelligensLogo />
         </Link>
 
         <div className="relative max-w-md">
@@ -67,7 +67,7 @@ function LoginPage() {
         </Link>
 
         <div className="mb-8 lg:hidden">
-          <PurpleLogo />
+          <SuperintelligensLogo />
         </div>
 
         <AuthForm />

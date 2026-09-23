@@ -16,7 +16,7 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-brand-blue: var(--brand-blue);
   --color-brand-mid: var(--brand-mid);
-  --color-brand-purple: var(--brand-purple);
+  --color-brand-violet: var(--brand-violet);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -55,10 +55,10 @@
   --popover: oklch(0.185 0 0);
   --popover-foreground: oklch(0.985 0 0);
 
-  /* Primary action gradient: electric blue through blue-violet to bold purple */
+  /* Primary action gradient: electric blue through blue-violet to bold superintelligens */
   --brand-blue: #063cff;
   --brand-mid: #4f29ff;
-  --brand-purple: #8c17ff;
+  --brand-violet: #8c17ff;
   --primary: var(--brand-mid);
   --primary-foreground: oklch(0.99 0 0);
 
@@ -73,16 +73,16 @@
 
   --destructive: oklch(0.985 0 0);
 
-  /* Seamless subtle grey borders (white at low opacity) */
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 12%);
+  /* Electric-blue interface lines across panels, controls, and dividers */
+  --border: color-mix(in oklch, var(--brand-blue) 72%, transparent);
+  --input: color-mix(in oklch, var(--brand-blue) 78%, transparent);
   --ring: var(--brand-mid);
 
   --radius: 0.75rem;
 
   --sidebar: oklch(0.145 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-border: color-mix(in oklch, var(--brand-blue) 72%, transparent);
   --sidebar-accent: oklch(0.225 0 0);
 
   /* Brand wordmark: flat pure white (no gradient) */
@@ -119,21 +119,26 @@
     90deg,
     var(--brand-blue) 0%,
     var(--brand-mid) 50%,
-    var(--brand-purple) 100%
+    var(--brand-violet) 100%
   );
 }
 
-/* Seamless subtle grey outline + soft white glow so the input isn't "dead" */
+/* Blue outline and glow for focused and elevated surfaces */
 @utility glow-border {
   box-shadow:
-    0 0 0 1px oklch(1 0 0 / 10%),
-    0 0 24px -6px oklch(1 0 0 / 10%);
+    0 0 0 1px color-mix(in oklch, var(--brand-blue) 72%, transparent),
+    0 0 24px -6px color-mix(in oklch, var(--brand-blue) 42%, transparent);
   transition: box-shadow 0.25s ease;
 }
 .glow-border:focus-within {
   box-shadow:
-    0 0 0 1px oklch(1 0 0 / 18%),
-    0 0 32px -4px oklch(1 0 0 / 16%);
+    0 0 0 1px color-mix(in oklch, var(--brand-blue) 90%, transparent),
+    0 0 32px -4px color-mix(in oklch, var(--brand-blue) 58%, transparent);
+}
+
+/* Keep every visible UI line on-brand, including legacy one-off border colors. */
+[class*="border-"]:not(.animate-spin):not(.pointer-events-none) {
+  border-color: var(--border) !important;
 }
 
 .glow-orb {
